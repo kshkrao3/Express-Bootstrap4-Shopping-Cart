@@ -1,0 +1,18 @@
+.img-responsive {
+  max-height: 200px; }
+
+.price {
+  font-weight: bold;
+  font-size: 16px; }
+
+.card {
+  margin: 10px 0px; }
+
+.mt-10 {
+  margin-top: 5rem; }
+
+.cart-img {
+  height: 30px !important;
+  width: 30px !important; }
+
+/*# sourceMappingURL=style.css.map */

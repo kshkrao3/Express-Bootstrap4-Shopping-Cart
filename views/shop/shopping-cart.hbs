@@ -1,0 +1,50 @@
+{{#if products}}
+    <div class="row">
+        <div class="col-12 col-md-8 offset-md-2">
+            <ul class="list-group">
+                {{#each products}}
+                    <li class="list-group-item">
+                        <img src="{{this.item.imagePath}}" alt="{{this.item.title}}" class="img-thumbnail cart-img rounded float-left">
+                        <strong class="ml-2">{{this.item.title}}</strong>
+                        <span class="float-right">
+                            <span class="badge badge-success badge-pill">
+                                ${{this.price}}
+                            </span>
+                            <div class="btn-group mr-2 ml-2">
+                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Action
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="/reduce/{{this.item._id}}">Reduce by 1</a>
+                                    <a class="dropdown-item" href="/remove/{{this.item._id}}">Remove All</a>
+                                </div>
+                            </div>
+                            <span class="badge badge-secondary float-right mt-2 badge-pill">
+                                {{this.qty}}
+                            </span>
+                        </span>
+                    </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-sm-6 col-md-6 offset-md-3 offset-sm-3">
+            <strong>Total: ${{totalPrice}}</strong>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6 col-md-6 offset-md-3 offset-sm-3">
+            <a class="btn btn-success" href="/checkout">Checkout</a>
+        </div>
+    </div>
+{{else}}
+<div class="row">
+    <div class="col-sm-6 col-md-6 offset-md-3 offset-sm-3">
+        <h2>No Items in Cart</h2>
+    </div>
+</div>
+{{/if}}
+
