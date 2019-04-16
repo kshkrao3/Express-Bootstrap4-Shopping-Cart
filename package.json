@@ -3,7 +3,8 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "nodemon ./bin/www"
+        "start": "nodemon server.js",
+        "start-hot": "gulp default"
     },
     "dependencies": {
         "bcrypt-nodejs": "0.0.3",
@@ -25,5 +26,10 @@
         "passport": "^0.4.0",
         "passport-local": "^1.0.0",
         "stripe": "^6.28.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.24.5",
+        "gulp": "^3.9.1",
+        "gulp-nodemon": "^2.2.1"
     }
 }

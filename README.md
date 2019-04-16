@@ -7,6 +7,14 @@ First of all a Big thanks to Author of the [Academind Youtube Channel](https://w
 
 I followed his [NodeJS Shopping Cart](https://www.youtube.com/watch?v=56TizEw2LgI&list=PL55RiY5tL51rajp7Xr_zk-fCFtzdlGKUp&index=1) youtube tutorial to create this repository. I would like to think him at this moment.
 
+## Pre-requisites
+
+### You should have installed following softwares installed in your system
+
+- **Node Js**
+- **Mongo DB**
+- **Express JS**
+
 ## Changes from my end
 
 - Used Bootstrap 4 and styled the UI accordingly.
@@ -34,6 +42,15 @@ Running the application
 npm start
 ```
 Navigate to [http://localhost:3000/](http://localhost:3000/)
+
+If you want to enable hot reload support, just run below command
+
+```
+npm run start-hot
+```
+> I've included gulp and browser sync builds for hot browser reload, but as of now it looks pretty slow to start.
+> If you do not want to have hot browser reload, then just run ```npm start```
+
 
 Browser Support
 ---------------
