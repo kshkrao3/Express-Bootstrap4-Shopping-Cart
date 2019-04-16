@@ -9,7 +9,7 @@ I followed his [NodeJS Shopping Cart](https://www.youtube.com/watch?v=56TizEw2Lg
 
 ## Pre-requisites
 
-### You should have installed following softwares installed in your system
+#### You should have following softwares installed in your system
 
 - **Node Js**
 - **Mongo DB**
